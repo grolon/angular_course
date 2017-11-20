@@ -25,20 +25,20 @@
         var service = this;
 
         var toBuyList = [{
-            name: 'cookies',
+            name: 'peaches',
             quantity: 10
         },{
-            name: 'mandicas',
-            quantity: 10
+            name: 'apples',
+            quantity: 8
         },{
-            name: 'chorizos',
-            quantity: 10
+            name: 'bananas',
+            quantity: 5
         },{
-            name: 'cervezas',
-            quantity: 10
+            name: 'strawberries',
+            quantity: 12
         },{
-            name: 'asados',
-            quantity: 10
+            name: 'pears',
+            quantity: 3
         }];
 
         var boughtList = [];
