@@ -17,28 +17,22 @@
 
   </head>
 <body ng-app="NarrowItDownApp">
-   <div class="container" ng-controller="NarrowItDownController as controller">
+   <div class="container" ng-controller="NarrowItDownController as list">
     <h1>Narrow Down Your Chinese Menu Choice</h1>
 
     <div class="form-group">
-      <input ng-model="controller.searchTerm" type="text" placeholder="search term" class="form-control">
+      <input ng-model="list.searchTerm" type="text" placeholder="search term" class="form-control">
     </div>
     <div class="form-group narrow-button">
-      <button class="btn btn-primary" ng-click="controller.getMatchedMenuItems(controller.searchTerm)">Narrow It Down For Me!</button>
+      <button class="btn btn-primary" ng-click="list.getMatchedMenuItems(list.searchTerm)">Narrow It Down For Me!</button>
     </div>
 
        <div class="form-group" style="margin-top: 90px">
            <!-- found-items should be implemented as a component -->
 
-           <!--<found-items found-items="...." on-remove="...."></found-items>-->
+           <found-items found-items="list" on-remove="list.removeMenuItem(index)"></found-items>
 
-           <ul>
-               <li ng-repeat="item in controller.found"><strong>{{item.name}}</strong>, {{item.short_name}}, <small>{{item.description}}</small>
-                   <button class="btn btn-default" ng-click="controller.removeMenuItem($index)"><span class="glyphicon glyphicon-remove"></span> Don't want this one!</button>
-               </li>
-           </ul>
-
-           <div class="form-group message"  style="color: red" ng-show="controller.nothingFound">
+           <div class="form-group message"  style="color: red" ng-show="list.nothingFound">
                Nothing found
            </div>
        </div>

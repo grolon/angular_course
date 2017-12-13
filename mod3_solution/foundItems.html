@@ -1,3 +1,5 @@
 <ul>
-    <li ng-repeat="item in cntrl.found"></li>
+    <li ng-repeat="item in foundItems.found"><strong>{{item.name}}</strong>, {{item.short_name}}, <small>{{item.description}}</small>
+        <button class="btn btn-default" ng-click="onRemove({index: $index});"><span class="glyphicon glyphicon-remove"></span> Don't want this one!</button>
+    </li>
 </ul>

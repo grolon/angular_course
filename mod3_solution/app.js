@@ -4,26 +4,7 @@
     angular.module("NarrowItDownApp", [])
         .controller('NarrowItDownController', NarrowItDownController)
         .service('MenuSearchService', MenuSearchService)
-        // .directive('foundItems', FoundItemsDirective)
-    ;
-
-
-    // function FoundItemsDirective() {
-    //     var ddo = {
-    //         templateUrl: 'foundItems.html',
-    //         scope: {
-    //             items: '<',
-    //             myTitle: '@title',
-    //             badRemove: '=',
-    //             onRemove: '&'
-    //         },
-    //         controller: NarrowItDownController,
-    //         controllerAs: 'cntrl',
-    //         bindToController: true
-    //     };
-    //
-    //     return ddo;
-    // }
+        .directive('foundItems', FoundItemsDirective);
 
     NarrowItDownController.$inject = ['MenuSearchService'];
     function NarrowItDownController(MenuSearchService) {
@@ -70,6 +51,7 @@
 
 
         controller.removeMenuItem = function(index) {
+            console.log('removeMenuItem');
             controller.found.splice(index, 1);
         };
 
@@ -88,6 +70,18 @@
 
             return response;
         };
+    }
+
+    function FoundItemsDirective() {
+        var ddo = {
+            templateUrl: 'foundItems.html',
+            scope: {
+                foundItems: '=',
+                onRemove: '&onRemove'
+            }
+        };
+
+        return ddo;
     }
 
 
