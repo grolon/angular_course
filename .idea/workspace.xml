@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="594adeef-7638-43ee-9865-2b4e6d49de60" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/mod3_solution/app.js" afterPath="$PROJECT_DIR$/mod3_solution/app.js" />
-      <change beforePath="$PROJECT_DIR$/mod3_solution/foundItems.html" afterPath="$PROJECT_DIR$/mod3_solution/foundItems.html" />
-      <change beforePath="$PROJECT_DIR$/mod3_solution/index.html" afterPath="$PROJECT_DIR$/mod3_solution/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -172,7 +169,7 @@
       <workItem from="1512404159561" duration="6553000" />
       <workItem from="1512656514573" duration="641000" />
       <workItem from="1513082019037" duration="177000" />
-      <workItem from="1513182777841" duration="7454000" />
+      <workItem from="1513182777841" duration="7490000" />
     </task>
     <task id="LOCAL-00001" summary="mod2 solution starter code">
       <created>1511193188119</created>
@@ -209,11 +206,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512410176344</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="mod3 solution finished!">
+      <created>1513190396696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1513190396696</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27259000" />
+    <option name="totallyTimeSpent" value="27295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="21" width="1360" height="717" extended-state="6" />
@@ -272,7 +276,8 @@
     <MESSAGE value="mod2 solution finished!" />
     <MESSAGE value="mod2 solution finished! (fruits used)" />
     <MESSAGE value="mod3 solution in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="mod3 solution in progress" />
+    <MESSAGE value="mod3 solution finished!" />
+    <option name="LAST_COMMIT_MESSAGE" value="mod3 solution finished!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
